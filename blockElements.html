@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1" />
+    <title>Training HTML - Block elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button
+        class="navbutton"
+        aria-expanded="false"
+        aria-controls="navi-liste"
+      >
+        ☰ Menü
+      </button>
+      <ul id="navi-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="aktuell" href="blockElements.html">block-elements</a></li>
+        <li>
+          <a href="inlineElements.html">inline-elements</a>
+        </li>
+        <li><a href="flexbox.html">flexbox</a></li>
+        <li><a href="gridlayout.html">gridlayout</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <h1 class="colorizedH1">Block elements</h1>  
+    <p>
+    1. HTML block level elements can appear in the body of an HTML page.<br>
+    2. It can contain another block level as well as inline elements.<br>
+    3. By default, block-level elements begin on new lines.<br>
+    4. block level elements create larger structures (than inline elements). 
+    </p>
+
+    <h2 class="listOf">List of Block elements:</h2>
+    <ul> 
+    <li>p</li>
+    <li>h1, h2, h3, h4, h5, h6</li>
+    <li>ol, ul</li>
+    <li>pre</li>
+    <li>address</li>
+    <li>blockquote</li>
+    <li>dl</li>
+    <li>div</li>
+    <li>fieldset</li>
+    <li>form</li>
+    <li>hr</li>
+    <li>noscript</li>
+    <li>table</li>
+    </ul>
+    
+    <p class="linebreaker">now u will see how they will look in HTML</p>
+ 
+    <h3 >Paragraph</h3>
+    <p>This is a normal paragraph</p>
+    <h3 >HEADINGS</h3>
+    
+    <h1 >Heading h1</h1>
+    <h2 >Heading h2</h2>
+    <h3 >Heading h3</h3>
+    <h4 >Heading h4</h4>
+    <h5 >Heading h5</h5>
+    <h6 >Heading h6</h6>
+  
+    <h3 >Ordered list</h3>
+    <ol>
+        <li>1<sup>st</sup> list element of an orderd list</li>
+        <li>2<sup>nd</sup> list element of an orderd list</li>
+        <li>3<sup>rd</sup> list element of an orderd list</li>
+    </ol>
+    <h3 >Unordered list</h3>
+    <ul>
+      <li>1<sup>st</sup> list element of an <strong>un</strong>orderd list</li>
+      <li>2<sup>nd</sup> list element of an <strong>un</strong>orderd list</li>
+      <li>3<sup>rd</sup> list element of an <strong>un</strong>orderd list</li>
+    </ul>
+    <h3 >The &lt;pre&gt; tag</h3>
+    <pre>
+The &lt;pre&gt; tag defines preformatted text. <strong>//NO br tag needed</strong>
+Text in a &lt;pre&gt; element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. <strong>//NO br tag needed</strong>
+The text will be displayed exactly as written in the HTML source code.</pre
+    >
+    <h3 >The &lt;adress&gt; tag</h3>
+    <address>max.mustermann@gmail.com <strong>//adress tag</strong></address>
+
+    <blockquote cite=“https://....“><p> ich bin ein Zitat <strong>//blockquote tag</strong></p></blockquote>
+
+    <dl> this is a definition list <strong>//dl tag</strong></dl>
+    <dt> includes the term that is explained <strong>//dt tag</strong></dt>
+    <dd> identifies the actual definition<strong>//dd tag</strong> </dd>
+    <br>
+    <fieldset>
+      This is an example for a <strong>//fieldset tag</strong>
+    </fieldset>
+    <br>
+    <h3 >The &lt;form&gt; element</h3>
+    <p>The &lt;form&gt; element can contain one or more of the following form elements:</p>
+    <form>
+      
+      <ul>
+        <li>&lt;input&gt;</li>
+        <li>&lt;textarea&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;select&gt;</li>
+        <li>&lt;option&gt;</li>
+        <li>&lt;optgroup&gt;</li>
+        <li>&lt;fieldset&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;output&gt;</li>
+      </ul>
+
+      <h4>for example</h4>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h3 >The &lt;hr&gt; tag</h3>
+    <p>The &lt;hr&gt; tag creates a horizontal line &#8595;</p>
+    <hr>
+    <h3 >The &lt;noscript&gt; tag</h3>
+    <p>The &lt;noscript&gt; tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.
+
+      The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;. When used inside &lt;head&gt;, the &lt;noscript&gt; element could only contain &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements.</p>
+      <br>
+      <h3>this is a an example for the &lt;table&gt;</h3>
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Earnings</th>
+          <th>Expenses</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$2500</td>
+          <td>$2400</td>
+          <td>$100</td>
+        </tr>
+      </table>
+    
+      <script>
+        const hamburger = document.querySelector("button[aria-expanded]");
+        function klappNav({ target }) {
+          const expanded =
+            target.getAttribute("aria-expanded") === "true" || false;
+          hamburger.setAttribute("aria-expanded", !expanded);
+        }
+        hamburger.addEventListener("click", klappNav);
+      </script>
+  </body>
+</html>

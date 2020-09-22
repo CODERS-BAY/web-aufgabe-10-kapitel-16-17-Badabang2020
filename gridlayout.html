@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1" />
+    <title>Training HTML & CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button
+        class="navbutton"
+        aria-expanded="false"
+        aria-controls="navi-liste"
+      >
+        ☰ Menü
+      </button>
+      <ul id="navi-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blockElements.html">block-elements</a></li>
+        <li>
+          <a href="inlineElements.html">inline-elements</a>
+        </li>
+        <li><a href="flexbox.html">flexbox</a></li>
+        <li><a class="aktuell" href="gridlayout.html">gridlayout</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <h1 class="colorizedH1">Gridlayout example:</h1>
+    <section class="gridContainer">
+      <header class="kopf"><h2>kopf</h2></header>
+      <article class="inhalt"><h2>inhalt</h2></article>
+      <nav class="navi"><h2>navi</h2></nav>
+      <aside class="seite"><h2>seite</h2></aside>
+      <footer class="fuss"><h2>fuss</h2></footer>
+    </section>
+    <hr />
+
+    <h2 class="colorizedH2">Align- & Justify- Items</h2>
+    <!--Building the examples for Align- & Justify Items-->
+    <section class="alignItems">
+      <div class="gridContainerAlignItems">
+        <h2>align-Items: start</h2>
+        <div class="alignItemsStart">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerAlignItems">
+        <h2>align-Items: end</h2>
+        <div class="alignItemsEnd">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerAlignItems">
+        <h2>align-Items: center</h2>
+        <div class="alignItemsCenter">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+    </section>
+    <section class="justifyItems">
+      <div class="gridContainerJustifyItems">
+        <h2>justify-Items: start</h2>
+        <div class="justifyItemsStart">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerJustifyItems">
+        <h2>justify-Items: end</h2>
+        <div class="justifyItemsEnd">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerJustifyItems">
+        <h2>justify-Items: center</h2>
+        <div class="justifyItemsCenter">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!--Building the examples for Align- & Justify Content-->
+    <h2 class="colorizedH2">Align- & Justify- Content</h2>
+    <section class="alignContent">
+      <div class="gridContainerAlignContent">
+        <h2>align-content: start</h2>
+        <div class="alignContentStart">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerAlignContent">
+        <h2>align-content: end</h2>
+        <div class="alignContentEnd">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerAlignContent">
+        <h2>align-content: center</h2>
+        <div class="alignContentCenter">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+    </section>
+    <section class="justifyContent">
+      <div class="gridContainerJustifyContent">
+        <h2>justify-content: start</h2>
+        <div class="justifyContentStart">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerJustifyContent">
+        <h2>justify-content: end</h2>
+        <div class="justifyContentEnd">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+      <div class="gridContainerJustifyContent">
+        <h2>justify-content: center</h2>
+        <div class="justifyContentCenter">
+          <div class="one">One</div>
+          <div class="two">Two</div>
+          <div class="three">Three</div>
+          <div class="four">Four</div>
+        </div>
+      </div>
+    </section>
+    <!--Script for Hamburger menu-->
+    <script>
+      const hamburger = document.querySelector("button[aria-expanded]");
+      function klappNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        hamburger.setAttribute("aria-expanded", !expanded);
+      }
+      hamburger.addEventListener("click", klappNav);
+    </script>
+    <!--Script for Top Page Button-->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
