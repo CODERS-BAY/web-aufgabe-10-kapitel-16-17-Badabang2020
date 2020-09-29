@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1" />
+    <title>Training HTML - Block elements</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button
+        class="navbutton"
+        aria-expanded="false"
+        aria-controls="navi-liste"
+      >
+        ☰ Menü
+      </button>
+      <ul id="navi-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blockElements.html">block-elements</a></li>
+        <li>
+          <a href="inlineElements.html">inline-elements</a>
+        </li>
+        <li><a class="aktuell" href="flexbox.html">flexbox</a></li>
+        <li><a href="gridlayout.html">gridlayout</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Content</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#alignItems">Align Items</a>
+        <a href="#justifyContent">Justify Content</a>
+        <a href="#elementCentering">Element Centering</a>
+      </div>
+    </div>
+    <h1 class="colorizedH1">Flexbox</h1>
+    <hr />
+    <section class="flexBox">
+      <h3>
+        By default - block elements are emitted like they are called in block
+        format (column)
+      </h3>
+      <div class="containerBlock">
+        <div class="firstBlockItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondBlockItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdBlockItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        when we wanna have our boxes as a row - we call them with "display:
+        flex;"
+      </h3>
+      <div class="containerFlex">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        we can also call "flex-direction: row-rewerse;" - look what has changed
+        - FYI can also be done with column-reverse ;)
+      </h3>
+      <div class="containerFlexReverse">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <h2 class="colorizedH2" id="alignItems">ALIGN ITEMS</h2>
+      <hr />
+      <h3>
+        space distribution with the help of align-items on lateral axis - by
+        default it is stretch
+      </h3>
+      <div class="containerFlexStretch">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of align-items on lateral axis -
+        flex-start
+      </h3>
+      <div class="containerFlexStart">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of align-items on lateral axis -
+        flex-end
+      </h3>
+      <div class="containerFlexEnd">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of align-items on lateral axis - center
+      </h3>
+      <div class="containerFlexCenter">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of align-items on lateral axis -
+        Baseline
+      </h3>
+      <div class="containerFlexBaseline">
+        <div class="firstFlexItemBaseline">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItemBaseline">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItemBaseline">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <h2 class="colorizedH2" id="justifyContent">JUSTIFY CONTENT</h2>
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis - by
+        default it is flex-start
+      </h3>
+      <div class="containerFlexJCFS">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis -
+        center
+      </h3>
+      <div class="containerFlexJCC">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis -
+        flex-end
+      </h3>
+      <div class="containerFlexJCFE">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis -
+        space-around
+      </h3>
+      <div class="containerFlexJCSA">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis -
+        space-between
+      </h3>
+      <div class="containerFlexJCSB">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <h3>
+        space distribution with the help of justify-content on main axis -
+        space-evenly
+      </h3>
+      <div class="containerFlexJCSE">
+        <div class="firstFlexItem">
+          <strong>first item</strong>
+        </div>
+        <div class="secondFlexItem">
+          <strong>second item</strong>
+        </div>
+        <div class="thirdFlexItem">
+          <strong>third item</strong>
+        </div>
+      </div>
+      <hr />
+      <h2 class="colorizedH2" id="elementCentering">ELEMENT CENTERING</h2>
+      <hr />
+      <h3>with the help of both (align-items & justify content)</h3>
+      <div class="containerFlexCentering">
+        <div class="flexItemCentered">
+          <strong>I am the centered element</strong>
+        </div>
+      </div>
+    </section>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!--Script for Hamburger menu-->
+    <script>
+      const hamburger = document.querySelector("button[aria-expanded]");
+      function klappNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        hamburger.setAttribute("aria-expanded", !expanded);
+      }
+      hamburger.addEventListener("click", klappNav);
+    </script>
+  </body>
+</html>

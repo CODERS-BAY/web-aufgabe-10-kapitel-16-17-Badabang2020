@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1" />
+    <title>Training HTML - Inline elements</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button
+        class="navbutton"
+        aria-expanded="false"
+        aria-controls="navi-liste"
+      >
+        ☰ Menü
+      </button>
+      <ul id="navi-liste">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blockElements.html">block-elements</a></li>
+        <li>
+          <a class="aktuell" href="inlineElements.html">inline-elements</a>
+        </li>
+        <li><a href="flexbox.html">flexbox</a></li>
+        <li><a href="gridlayout.html">gridlayout</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+    <h1 class="colorizedH1">Inline elements</h1>
+    <p>
+      1. HTML inline level elements can appear in the body of an HTML page.<br />
+      2. It can contain data and other inline elements.<br />
+      3. By default, inline elements do not begin on new lines.<br />
+      4. inline elements create shorter structures (than block level
+      elements).<br />
+    </p>
+
+    <h2 class="listOf">List of inline elements</h2>
+    <ul>
+      <li>b, big, i, small, tt</li>
+      <li>abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var</li>
+      <li>a, bdo, br, img, map, object, q, script, span, sub, sup</li>
+      <li>button, input, label, select, textarea</li>
+    </ul>
+
+    <p class="linebreaker">now u will see how they will look in HTML</p>
+      <h3>The &lt;b&gt; tag</h3>
+      <b>This is the b tag</b>
+      <h3>The &lt;big&gt; tag</h3>
+      <big>this is a big tag</big>
+      <h3>The &lt;i&gt; tag</h3>
+      <i>This is italic - the i tag</i>
+      <h3>The &lt;small&gt; tag</h3>
+      <small>this is the small tag</small>
+      <h3>The &lt;tt&gt; tag</h3>
+      <tt>this is the tt tag</tt>
+      <h3>The &lt;abbr&gt; tag</h3>
+      <abbr>this is the abbr tag</abbr>
+      <h3>The &lt;acronym&gt; tag</h3>
+      <acronym>this is the acronym tag</acronym>
+      <h3>The &lt;cite&gt; tag</h3>
+      <cite>cite tag</cite>
+      <h3>The &lt;code&gt; tag</h3>
+      <code>code tag</code>
+      <h3 >The &lt;dfn&gt; tag</h3>
+      <dfn>dfn (definition) tag</dfn>
+      <h3 >The &lt;em&gt; tag</h3>
+      <em>em (emphasis) tag</em>
+      <h3>The &lt;kbd&gt; tag</h3>
+      <kbd>kbd (keyboard) tag</kbd>
+      <h3>The &lt;strong&gt; tag</h3>
+      <strong>strong tag</strong>
+      <h3>The &lt;samp&gt; tag</h3>
+      <samp>samp tag</samp>
+      <h3>The &lt;var&gt; tag</h3>
+      <var>var (variable) tag</var>
+      <h3>The &lt;a&gt; tag</h3>
+      <a href="#">
+        The a tag gives u possibility for links, u have to put href (hypertext
+        reference) to it, <br> for a dead link/ or not knowing atm which href u need
+        - USE #
+      </a>
+      <h3>The &lt;bdo&gt; tag with example</h3>
+      <bdo>this is the bdo tag</bdo><br>
+      <bdo dir="rtl">This sentence will go right-to-left.</bdo>
+      <h3>The &lt;map&gt; tag in an image</h3>
+      <img
+        class="imgmap"
+        src="https://tutorialcodeplay.com/uploads/tutorial_images/map_tag_rect_shape.png"
+        usemap="#mapForClickableArea"
+        alt="imgageForClickableArea"
+      />
+      <map name="mapForClickableArea">
+        <area
+          shape="rect"
+          coords="250,120,320,180"
+          alt="Clickable area"
+          href="smf.html"
+        />
+      </map>
+      <script>
+        $("img[usemap]").rwdImageMaps();
+      </script>
+      <h3>The &lt;object&gt; tag</h3>
+      <object>
+        This is an object
+      </object>
+      <h3>The &lt;q&gt; tag</h3>
+      <q> This is a q tag</q>
+      <h3>The &lt;script&gt; tag</h3>
+      &lt;script&gt;embed a client-side script (JavaScript)
+      &lt;&frasl;script&gt;
+      <h3>The &lt;span&gt; tag</h3>
+      <span>span tag</span>
+      <h3>The &lt;sub&gt; tag</h3>
+      <p>To see the<sub>sub tag</sub></p>
+      <h3>The &lt;sup&gt; tag</h3>
+      <p>To see the<sup>sup tag</sup></p>
+      <h3>The &lt;button&gt; tag</h3>
+      <button>This is a Button</button>
+      <h3>The &lt;input&gt; tag</h3>
+      <label for="search">Suche</label>
+      <input type="search" name="search" id="search" />
+      <h3>The &lt;select&gt; tag</h3>
+      <select name="selector" id="selector">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <h3>The &lt;textarea&gt; tag</h3>
+      <textarea cols="50" rows="5">
+Please enter your text into your textarea</textarea
+      >
+    </div>
+    <!--Script for Hamburger menu-->
+    <script>
+      const hamburger = document.querySelector("button[aria-expanded]");
+      function klappNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        hamburger.setAttribute("aria-expanded", !expanded);
+      }
+      hamburger.addEventListener("click", klappNav);
+    </script>
+    <!--Implementing Responsive Img Map-->
+    <!--<script>
+      (function ($) {
+        $.fn.rwdImageMaps = function () {
+          var $img = this;
+
+          var rwdImageMap = function () {
+            $img.each(function () {
+              if (typeof $(this).attr("usemap") == "undefined") return;
+
+              var that = this,
+                $that = $(that);
+
+              // Since WebKit doesn't know the height until after the image has loaded, perform everything in an onload copy
+              $("<img />")
+                .on("load", function () {
+                  var attrW = "width",
+                    attrH = "height",
+                    w = $that.attr(attrW),
+                    h = $that.attr(attrH);
+
+                  if (!w || !h) {
+                    var temp = new Image();
+                    temp.src = $that.attr("src");
+                    if (!w) w = temp.width;
+                    if (!h) h = temp.height;
+                  }
+
+                  var wPercent = $that.width() / 100,
+                    hPercent = $that.height() / 100,
+                    map = $that.attr("usemap").replace("#", ""),
+                    c = "coords";
+
+                  $('map[name="' + map + '"]')
+                    .find("area")
+                    .each(function () {
+                      var $this = $(this);
+                      if (!$this.data(c)) $this.data(c, $this.attr(c));
+
+                      var coords = $this.data(c).split(","),
+                        coordsPercent = new Array(coords.length);
+
+                      for (var i = 0; i < coordsPercent.length; ++i) {
+                        if (i % 2 === 0)
+                          coordsPercent[i] = parseInt(
+                            (coords[i] / w) * 100 * wPercent
+                          );
+                        else
+                          coordsPercent[i] = parseInt(
+                            (coords[i] / h) * 100 * hPercent
+                          );
+                      }
+                      $this.attr(c, coordsPercent.toString());
+                    });
+                })
+                .attr("src", $that.attr("src"));
+            });
+          };
+          $(window).resize(rwdImageMap).trigger("resize");
+
+          return this;
+        };
+      })(jQuery);
+    </script>-->
+  </body>
+</html>

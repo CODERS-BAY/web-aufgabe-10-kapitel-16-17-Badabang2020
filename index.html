@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button
+        class="navbutton"
+        aria-expanded="false"
+        aria-controls="navi-liste"
+      >
+        ☰ Menü
+      </button>
+      <ul id="navi-liste">
+        <li><a class="aktuell" href="index.html">Home</a></li>
+        <li><a href="blockElements.html">block-elements</a></li>
+        <li>
+          <a href="inlineElements.html">inline-elements</a>
+        </li>
+        <li><a href="flexbox.html">flexbox</a></li>
+        <li><a href="gridlayout.html">gridlayout</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="colorizedH1">Training HTML</h1>
+      <h3>
+        Training HTML & CSS - using everything we learned and going threw the
+        book "HTML & CSS for dummies"!
+      </h3>
+      <img
+        class="imgIndexPage"
+        src="https://i.weltbild.de/p/html-css-fuer-dummies-264905463.jpg?v=1&wp=_ads-default-v4"
+      />
+    </main>
+    <script>
+      const hamburger = document.querySelector("button[aria-expanded]");
+      function klappNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        hamburger.setAttribute("aria-expanded", !expanded);
+      }
+      hamburger.addEventListener("click", klappNav);
+    </script>
+  </body>
+</html>

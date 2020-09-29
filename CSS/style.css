@@ -1,0 +1,832 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 2.5rem 5rem;
+}
+
+nav {
+  background-color: #f5f469;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  font-size: 1.25rem;
+}
+
+nav a.aktuell {
+  font-weight: bold;
+  color: #f55e5d;
+}
+
+.navigation button {
+  display: none;
+}
+
+p {
+  padding: 1rem 0;
+  line-height: 1.5rem;
+}
+
+div strong {
+  font-size: 200%;
+}
+
+li {
+  line-height: 1.5rem;
+}
+
+h3 {
+  background-color: #27a84e;
+  color: #f5f469;
+  text-transform: uppercase;
+  margin: 2rem 0 0.5rem;
+  width: 50%;
+}
+
+h3:nth-of-type(2n + 1) {
+  background-color: #f5f469;
+  color: #27a84e;
+}
+
+.linebreaker {
+  font-size: 2rem;
+  background-color: #9845f5;
+  color: #f5f469;
+}
+
+.listOf {
+  color: #9845f5;
+  letter-spacing: 0.25rem;
+}
+
+.colorizedH1 {
+  color: #f551ef;
+}
+
+.colorizedH2 {
+  color: #27a84e;
+}
+
+.containerBlock {
+  display: block;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.firstBlockItem {
+  background-color: #ff0000;
+  width: 10rem;
+  height: 10rem;
+}
+
+.secondBlockItem {
+  background-color: #00ff00;
+  width: 10rem;
+  height: 10rem;
+}
+
+.thirdBlockItem {
+  background-color: #0000ff;
+  width: 10rem;
+  height: 10rem;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: row;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.firstFlexItem {
+  background-color: #ff0000;
+  width: 10rem;
+  height: 15rem;
+}
+
+.secondFlexItem {
+  background-color: #00ff00;
+  width: 10rem;
+}
+
+.thirdFlexItem {
+  background-color: #0000ff;
+  width: 10rem;
+}
+
+.containerFlexReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexStretch {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexStart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexEnd {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexBaseline {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.firstFlexItemBaseline {
+  background-color: #ff0000;
+  width: 20rem;
+  height: 30rem;
+}
+
+.secondFlexItemBaseline {
+  background-color: #00ff00;
+  width: 10rem;
+  height: 10rem;
+}
+
+.thirdFlexItemBaseline {
+  background-color: #0000ff;
+  width: 30rem;
+  height: 20rem;
+}
+
+.containerFlexJCFS {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexJCC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexJCFE {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexJCSA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexJCSB {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexJCSE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.containerFlexCentering {
+  background-color: #9a73b1;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem solid #000000;
+  margin-bottom: 2.5rem;
+}
+
+.flexItemCentered {
+  background-color: #df9fca;
+  border: 0.2rem dotted;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  grid-gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.kopf {
+  background-color: #73b186;
+  border: 0.25rem solid #00000044;
+  border-radius: 1rem;
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.navi {
+  background-color: #256638;
+  border: 0.25rem solid #00000044;
+  border-radius: 1rem;
+  padding: 0 0;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.inhalt {
+  background-color: #ffffff;
+  border: 0.25rem solid #119b4f70;
+  border-radius: 1rem;
+
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+.seite {
+  background-color: #31b459;
+  border: 0.25rem solid #0e0f0f2a;
+  border-radius: 1rem;
+
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.fuss {
+  background-color: #10d34b;
+  border: 0.25rem solid #088a2f;
+  border-radius: 1rem;
+
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.alignItems {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.gridContainerAlignItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 20vh;
+  margin: 1rem auto;
+}
+
+.gridContainerAlignItems div {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.alignItemsStart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: start;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.alignItemsEnd {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: end;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.alignItemsCenter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyItems {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 5rem;
+}
+
+.gridContainerJustifyItems div {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.gridContainerJustifyItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 20vh;
+  margin: 1rem auto;
+}
+
+.justifyItemsStart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: start;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyItemsEnd {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: end;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyItemsCenter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.alignContent {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.gridContainerAlignContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 20vh;
+  margin: 1rem auto;
+}
+
+.gridContainerAlignContent div {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.alignContentStart {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  align-content: start;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.alignContentEnd {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  align-content: end;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.alignContentCenter {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  align-content: center;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyContent {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 5rem;
+}
+
+.gridContainerJustifyContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 20vh;
+  margin: 1rem auto;
+}
+
+.gridContainerJustifyContent div {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.justifyContentStart {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  justify-content: start;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyContentEnd {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  justify-content: end;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.justifyContentCenter {
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: repeat(2, 5rem);
+  justify-content: center;
+  border: 0.25rem solid #1a3fe6;
+}
+
+.one {
+  background-color: #9a73b1;
+}
+
+.two {
+  background-color: #9251b8;
+}
+
+.three {
+  background-color: #b462e4;
+}
+
+.four {
+  background-color: #6b2196;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #f55e5d;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #f55d5d93;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 12.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 2rem; /* Place the button at the bottom of the page */
+  right: 2.5rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1rem 1rem; /* Some padding */
+  border-radius: 0.5rem; /* Rounded corners */
+  font-size: 0.8rem; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#backButton {
+  display: block;
+  background-color: #c71111;
+  font-size: 2rem;
+  border: 0.5rem groove #555;
+}
+
+#backButton a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.imgIndexPage {
+  width: 25%;
+  max-height: auto;
+}
+
+/*------------------------------------Responsive web design------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+  body {
+    display: block;
+    flex-direction: column;
+    margin: 1.5rem 1rem;
+  }
+
+  .navigation button {
+    position: absolute;
+    top: 1.4rem;
+    right: 0.5rem;
+    border: 0;
+    background: #ffffff;
+    color: #000000;
+    font-size: inherit;
+    display: block;
+  }
+
+  .navigation ul {
+    display: none;
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+  }
+
+  ul li {
+    line-height: 2rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .linebreaker {
+    font-size: 1.5rem;
+    background-color: #9845f5;
+    color: #f5f469;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  /*-------------------------------------------FLEXBOX-------------------------------------------*/
+  /*---------------------------------------------------------------------------------------------*/
+
+  .flexBox {
+    display: block;
+  }
+
+  .flexBox div {
+    order: 0;
+    width: auto;
+  }
+
+  .firstFlexItem {
+    max-width: 25%;
+  }
+
+  .firstFlexItem strong {
+    font-size: 150%;
+  }
+
+  .secondFlexItem {
+    max-width: 25%;
+  }
+
+  .secondFlexItem strong {
+    font-size: 150%;
+  }
+
+  .thirdFlexItem {
+    max-width: 25%;
+  }
+
+  .thirdFlexItem strong {
+    font-size: 150%;
+  }
+
+  .firstFlexItemBaseline {
+    max-width: 25%;
+  }
+
+  .firstFlexItemBaseline strong {
+    font-size: 150%;
+  }
+
+  .secondFlexItemBaseline {
+    max-width: 25%;
+  }
+
+  .secondFlexItemBaseline strong {
+    font-size: 150%;
+  }
+
+  .thirdFlexItemBaseline {
+    max-width: 25%;
+  }
+
+  .thirdFlexItemBaseline strong {
+    font-size: 150%;
+  }
+
+  .flexItemCentered {
+    max-width: 30%;
+    max-height: 30%;
+  }
+
+  .flexItemCentered strong {
+    font-size: 125%;
+  }
+
+  /*-----------------------------------------GRIDLAYOUT------------------------------------------*/
+  /*---------------------------------------------------------------------------------------------*/
+
+  .gridContainer {
+    margin-bottom: 5rem;
+  }
+
+  .alignItems {
+    display: block;
+    width: 100%;
+    height: 125%;
+  }
+
+  .gridContainerAlignItems {
+    margin-bottom: 5rem;
+  }
+
+  .alignItemsStart {
+    width: 150%;
+    height: 125%;
+  }
+
+  .alignItemsEnd {
+    width: 150%;
+    height: 125%;
+  }
+
+  .alignItemsCenter {
+    width: 150%;
+    height: 125%;
+  }
+
+  .justifyItems {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0rem;
+  }
+
+  .justifyItemsStart {
+    width: 150%;
+    height: 125%;
+  }
+
+  .justifyItemsEnd {
+    width: 150%;
+    height: 125%;
+  }
+
+  .justifyItemsCenter {
+    width: 150%;
+    height: 125%;
+  }
+
+  .gridContainerJustifyItems {
+    margin-bottom: 5rem;
+  }
+
+  .alignContent {
+    display: block;
+    width: 100%;
+  }
+
+  .alignContentStart {
+    width: 125%;
+    height: 125%;
+  }
+
+  .alignContentEnd {
+    width: 125%;
+    height: 125%;
+  }
+
+  .alignContentCenter {
+    width: 125%;
+    height: 125%;
+  }
+
+  .gridContainerAlignContent {
+    margin-bottom: 5rem;
+  }
+
+  .justifyContent {
+    display: block;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+
+  .justifyContentStart {
+    width: 125%;
+    height: 125%;
+  }
+
+  .justifyContentEnd {
+    width: 125%;
+    height: 125%;
+  }
+
+  .justifyContentCenter {
+    width: 125%;
+    height: 125%;
+  }
+
+  .gridContainerJustifyContent {
+    margin-bottom: 5rem;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+
+  .imgIndexPage {
+    width: 100%;
+  }
+
+  .imgsmf {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 0 0;
+  }
+
+  .imgmap {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+  }
+}
